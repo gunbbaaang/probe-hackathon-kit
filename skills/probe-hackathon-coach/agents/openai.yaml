@@ -1,0 +1,4 @@
+interface:
+  display_name: "Probe 해커톤 코치"
+  short_description: "AI 사원 인터뷰부터 검증과 이해도 점검까지 돕는 해커톤 코치"
+  default_prompt: "$probe-hackathon-coach 현재 과제와 남은 시간을 바탕으로 다음 행동과 필요한 근거를 정리해 줘."
