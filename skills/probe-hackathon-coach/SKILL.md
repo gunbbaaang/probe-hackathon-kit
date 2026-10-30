@@ -29,6 +29,7 @@ AI 사원에게 업무를 확인하고, 참가자가 Codex와 해결책을 만�
 | 요청 | 읽을 자료 | 만들어야 할 결과 |
 |---|---|---|
 | Probe 실전, 터미널 대화 평가 | [dialogue.md](references/dialogue.md) | 실제 대화에서 목표·판단·검증·이해가 확인되는 진행 |
+| 사용 방법, 웹·PPT 제작 단계 연결 | [field-guide.md](references/field-guide.md) | 현장 요청 예시, 단계별 제작 스킬과 검증 순서 |
 | 인터뷰, 문제 찾기 | [discovery.md](references/discovery.md) | 다음 질문, 근거가 있는 문제 문장, 미확인 조건 |
 | 범위 확정, 계획 | [delivery.md](references/delivery.md) | 핵심 사용자 흐름, 성공 기준, 제외 범위, 작업 계약 |
 | 구현, 중간 점검 | [delivery.md](references/delivery.md) | 작은 작동 단위, 변경 이유, 갱신된 진행 상태 |

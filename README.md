@@ -1,10 +1,12 @@
 # Probe Hackathon Kit
 
-**코치·기록·인계·시각화·코드 관계도를 한 번에 설치하려면 [gunbbaaang/skills](https://github.com/gunbbaaang/skills)를 사용하세요.** 이 저장소의 해커톤 코치도 포함되어 있습니다. 이 저장소는 코치만 설치할 때 계속 사용할 수 있습니다.
+**코치·기록·인계·시각화·코드 관계도·웹·PPT 제작 스킬을 한 번에 설치하려면 [gunbbaaang/skills](https://github.com/gunbbaaang/skills)를 사용하세요.** 이 저장소의 해커톤 코치도 포함되어 있습니다. 이 저장소는 코치만 설치할 때 계속 사용할 수 있습니다.
 
 AI 사원 인터뷰부터 문제 정의, MVP 구현, 검증, 참가자 설명까지 돕는 한국어 Codex 스킬입니다. **Probe 안의 터미널 Codex 대화가 평가되는 상황을 위한 ‘Probe 실전 모드’**와 6개 작업 모드를 담았습니다. 스킬 자체에는 외부 API나 실행 스크립트 의존성이 없습니다.
 
 공식 대회 운영사와 무관한 개인 준비용 자료입니다. 포함된 과거 평가항목은 준비를 위한 참고이며, 실제 대회 안내와 도구 사용 규칙을 우선합니다.
+
+실전 진행 순서와 웹·PPT 요청 예시는 [Probe 실전 사용 안내](skills/probe-hackathon-coach/references/field-guide.md)를 참고하세요. 제작 스킬은 위 전체 묶음에서 설치할 수 있습니다.
 
 ## 현장에서 한 줄 설치
 
