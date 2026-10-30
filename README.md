@@ -1,12 +1,12 @@
 # Probe Hackathon Kit
 
-AI 사원 인터뷰부터 문제 정의, MVP 구현, 검증, 참가자 설명까지 돕는 한국어 Codex 스킬입니다. 하나의 코치에 6개 모드를 담았으며, 스킬 자체에는 외부 API나 실행 스크립트 의존성이 없습니다.
+AI 사원 인터뷰부터 문제 정의, MVP 구현, 검증, 참가자 설명까지 돕는 한국어 Codex 스킬입니다. **Probe 안의 터미널 Codex 대화가 평가되는 상황을 위한 ‘Probe 실전 모드’**와 6개 작업 모드를 담았습니다. 스킬 자체에는 외부 API나 실행 스크립트 의존성이 없습니다.
 
 공식 대회 운영사와 무관한 개인 준비용 자료입니다. 포함된 과거 평가항목은 준비를 위한 참고이며, 실제 대회 안내와 도구 사용 규칙을 우선합니다.
 
 ## 현장에서 한 줄 설치
 
-Node.js 22.20 이상과 Git이 있는 환경에서 **대회 작업 폴더의 터미널**을 열고 실행하세요. 공개 저장소이므로 다운로드에 GitHub 로그인은 필요하지 않습니다. `skills` CLI 1.7.4로 설치를 검증했습니다.
+Node.js 22.20 이상과 Git이 있는 환경에서 **평가받는 Probe 환경의 작업 폴더에 있는 터미널 셸**을 열고 실행하세요. Codex 대화 입력창에 넣는 셸 명령은 아닙니다. 다른 PC에만 설치하면 Probe 안의 Codex에는 자동 적용되지 않습니다. 공개 저장소이므로 다운로드에 GitHub 로그인은 필요하지 않습니다. `skills` CLI 1.7.4로 설치를 검증했습니다.
 
 Windows PowerShell:
 
@@ -28,7 +28,7 @@ npx --yes skills@1.7.4 add gunbbaaang/probe-hackathon-kit --skill probe-hackatho
 npx.cmd --yes skills@1.7.4 list --agent codex
 ```
 
-macOS/Linux에서는 `npx.cmd` 대신 `npx`를 사용합니다. Codex에서 `$probe-hackathon-coach`를 선택하거나 입력하세요. 목록이 갱신되지 않으면 Codex를 다시 시작합니다.
+macOS/Linux에서는 `npx.cmd` 대신 `npx`를 사용합니다. 설치했던 스킬을 직접 수정하지 않았다면 같은 설치 명령으로 최신 내용을 가져올 수 있습니다. Codex 대화 입력창에서 아래 시작 문구를 사용하세요. 목록이 아직 갱신되지 않은 현재 대화에서는 `.agents/skills/probe-hackathon-coach/SKILL.md`를 읽고 적용해 달라고 직접 요청할 수 있습니다.
 
 ### Node.js가 없으면
 
@@ -44,11 +44,15 @@ $skill-installer install https://github.com/gunbbaaang/probe-hackathon-kit/tree/
 
 ```text
 $probe-hackathon-coach
-제한 시간은 4시간이고, 아래에 과제와 공식 안내를 붙일게.
-확인된 사실과 가설을 구분하고 다음 행동부터 진행해 줘.
-AI 사원에게 물을 질문은 설계 결정을 바꿀 수 있는 순서로 제안해 줘.
-실행한 검증과 미실행 검증을 구분하고, 마지막에는 내가 직접 설명할 수 있는지 한 문제씩 확인해 줘.
+Probe 실전 모드로 진행해 줘. 이 터미널에서 너와 나누는 대화가 평가 대상이야.
+이 과제 동안 목표와 완료 기준, 작업 분해, 선택 이유, 실제 검증 결과, 방향 변경을 필요한 순간에 짧게 설명해 줘.
+내 판단과 네 제안, 직접 실행한 결과를 구분해 줘.
+중요한 시점에는 내가 동작·구조·선택 이유를 이해했는지 한 문제씩 묻고 내 답을 기다려 줘.
+이미 정한 일은 반복 승인받지 말고, 형식적인 문답으로 구현 시간을 쓰지 마.
+아래에 과제, 공식 안내, 남은 시간을 붙일게.
 ```
+
+실전 모드는 같은 과제의 후속 대화에도 적용합니다. 단순 파일 기록을 넘어 실제 대화에서 의사결정과 검증 근거를 짧게 확인하는 방식입니다. 참가자의 판단이나 이해는 본인이 직접 표현해야 하며, Codex가 쓴 설명을 참가자 발언으로 간주하지 않습니다. [실전 대화 진행 방식과 평가항목 연결](skills/probe-hackathon-coach/references/dialogue.md)
 
 | 모드 | 요청 예 |
 |---|---|
@@ -62,6 +66,7 @@ AI 사원에게 물을 질문은 설계 결정을 바꿀 수 있는 순서로 �
 ## 들어 있는 자료
 
 - [스킬 본문](skills/probe-hackathon-coach/SKILL.md)
+- [Probe 실전 대화](skills/probe-hackathon-coach/references/dialogue.md)
 - [사진에서 정리한 16개 평가항목](skills/probe-hackathon-coach/references/rubric.md)
 - [AI 사원 인터뷰](skills/probe-hackathon-coach/references/discovery.md)
 - [MVP 계약과 4시간 운영안](skills/probe-hackathon-coach/references/delivery.md)

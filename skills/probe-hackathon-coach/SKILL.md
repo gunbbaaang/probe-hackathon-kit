@@ -1,11 +1,17 @@
 ---
 name: probe-hackathon-coach
-description: "Use when preparing for or working through a Probe or Cofa-style time-boxed hackathon with AI stakeholders, problem discovery, MVP delivery, verification, and participant explanation. Also use for rubric-based practice and submission review."
+description: "Use when preparing for or working through a Probe or Cofa-style hackathon, especially when the participant's conversation with terminal Codex is evaluated. Applies to live dialogue coaching, AI stakeholder discovery, MVP delivery, verification, and participant explanation."
 ---
 
 # Probe Hackathon Coach
 
 AI 사원에게 업무를 확인하고, 참가자가 Codex와 해결책을 만들며, 그 결과를 직접 설명하는 해커톤을 지원한다. 실제 문제 해결과 확인 가능한 근거를 우선한다. 한국어를 기본으로 하되 사용자의 언어를 따른다.
+
+## Probe 안의 대화가 평가되는 경우
+
+사용자가 ‘Probe 실전 모드’를 요청하거나, Probe 안의 터미널 Codex 대화가 평가된다고 설명하면 [dialogue.md](references/dialogue.md)를 읽고 해당 과제의 후속 대화에도 적용한다. 매번 스킬을 다시 호출하게 하지 않는다. 사용자가 모드를 끄거나 다른 과제로 전환하면 이를 강요하지 않는다.
+
+중요한 목표·선택·검증·변경은 현재 대화에서 짧게 설명한다. 파일에만 적고 대화에서는 ‘완료’로 끝내지 않는다. 참가자 발언, Codex 제안, 도구에서 확인한 결과를 구분한다. 참가자의 이해와 판단은 본인이 답할 기회를 주어 확인한다. 필요한 기록량은 작업에 비례시키고 모든 응답을 평가표 양식으로 만들지 않는다.
 
 ## 시작
 
@@ -22,6 +28,7 @@ AI 사원에게 업무를 확인하고, 참가자가 Codex와 해결책을 만�
 
 | 요청 | 읽을 자료 | 만들어야 할 결과 |
 |---|---|---|
+| Probe 실전, 터미널 대화 평가 | [dialogue.md](references/dialogue.md) | 실제 대화에서 목표·판단·검증·이해가 확인되는 진행 |
 | 인터뷰, 문제 찾기 | [discovery.md](references/discovery.md) | 다음 질문, 근거가 있는 문제 문장, 미확인 조건 |
 | 범위 확정, 계획 | [delivery.md](references/delivery.md) | 핵심 사용자 흐름, 성공 기준, 제외 범위, 작업 계약 |
 | 구현, 중간 점검 | [delivery.md](references/delivery.md) | 작은 작동 단위, 변경 이유, 갱신된 진행 상태 |
@@ -33,13 +40,13 @@ AI 사원에게 업무를 확인하고, 참가자가 Codex와 해결책을 만�
 
 ## 근거와 진행 관리
 
-기존 프로젝트 기록을 재사용한다. 없다면 필요할 때만 `probe-notes/brief.md`, `evidence.md`, `decisions.md`를 만든다. 형식은 [records.md](references/records.md)를 참고한다. 기존 파일을 덮어쓰지 않는다.
+기존 프로젝트 기록을 재사용한다. 없다면 필요할 때만 `probe-notes/brief.md`, `evidence.md`, `decisions.md`를 만든다. 형식은 [records.md](references/records.md)를 참고한다. 기존 파일을 덮어쓰지 않는다. 실전 모드에서는 파일이 현재 대화의 짧은 근거 설명을 대체하지 않는다.
 
 - 업무 주장에는 출처와 상태를 붙인다: `확인 사실 / 가설 / 제안 / 미확인`.
 - 요구사항은 `출처 → 수용 기준 → 구현 위치 → 검증 결과`로 연결한다. 파일 경로, 대화 시점, 테스트 결과 등 실제로 존재하는 참조를 쓴다.
 - 목표 수치, 합성 데이터 성능, 실데이터 성능, 현장 효과를 구분한다. 실행하지 않은 테스트는 미실행, mock은 mock으로 표시한다.
 - 중요한 방향 전환만 `새 근거 → 이전 결정 → 변경 결정 → 영향`으로 기록한다. 사후에 꾸민 대화·테스트·사용자 확인을 넣지 않는다.
-- 로컬 파일이나 외부 Codex 대화가 Probe 평가자에게 자동 전달된다고 가정하지 않는다. 실제 제출 경로에 맞게 필요한 근거를 포함한다.
+- 사용자가 지정한 평가 대상 대화에서 핵심 근거를 설명한다. 다른 PC·앱의 Codex 대화나 로컬 파일이 자동 전달된다고 가정하지 않는다. 정확한 수집 범위·채점 알고리즘·배점은 확인된 안내 이상으로 단정하지 않는다.
 - 작업 분해는 입력·출력·완료 기준·의존성을 명확히 하는 일이다. 에이전트 수를 늘리는 일로 대체하지 않는다. 실제 위임은 환경의 권한과 사용자 요청을 따른다.
 
 ## 시간에 맞춘 판단
